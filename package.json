@@ -1,5 +1,5 @@
 {
-  "name": "clear-create-react-app",
+  "name": "cleanup-create-react-app",
   "version": "1.0.0",
   "description": "Remove unwanted files from the default create-react-app",
   "main": "index.js",
