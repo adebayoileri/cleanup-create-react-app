@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bin": "node .index"
+    "bin": "node ./index",
+    "clear": "bash index.sh"
   },
   "keywords": [
     "react"
