@@ -27,7 +27,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              chalk.red(console.log("deleted app.js"));
+              console.log(chalk.red("🗑️ deleted app.js"));
             }
           });
         break;
@@ -36,7 +36,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              chalk.red(console.log("deleted logo.svg"));
+              console.log(chalk.red("🗑️ deleted logo.svg"));
             }
           });
         break;
@@ -45,7 +45,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              chalk.red(console.log("deleted app.css"));
+              console.log(chalk.red("🗑️ deleted app.css"));
             }
           });
         break;
@@ -54,7 +54,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-             chalk.red(console.log("deleted index.js"));
+              console.log(chalk.red(" 🗑️ deleted index.js"));
             }
           });
         break;
@@ -63,7 +63,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              chalk.red(console.log("deleted index.css"));
+              console.log(chalk.red("🗑️ deleted index.css"));
             }
           });
         break;
@@ -72,7 +72,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              chalk.red(console.log("deleted app.test.js"));
+              console.log(chalk.red("🗑️ deleted app.test.js"));
             }
           });
         break;
@@ -81,7 +81,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              chalk.red(console.log("deleted serviceWorker.js"));
+              console.log(chalk.red("🗑️ deleted serviceWorker.js"));
             }
           });
         break;
@@ -92,9 +92,10 @@ inquirer
     if (err) {
       console.error(err);
     } else {
-        chalk.green(console.log('React app sucessfully cleaned up'));
+      console.log(chalk.green(`React app sucessfully cleaned up ⚡ `));7
+      console.log(chalk.blue('Let get into coding ⚡'))
     }
   })
 })
-.catch((err) => console.log(err));
+.catch((err) => console.log(chalk.red(err)));
 });
