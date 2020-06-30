@@ -1,1 +1,2 @@
+#!/bin/bash
 echo "import React from 'react'; import ReactDOM from 'react-dom';  import App from './App'; ReactDOM.render(<App />, document.getElementById('root'));" > src/index.js && echo "import React, { Component } from 'react';  class App extends Component {  render() {     return (       <h1>Hello World</h1>     );   }  }  export default App;" > src/App.js

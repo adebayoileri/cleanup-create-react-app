@@ -2,4 +2,5 @@
  :hammer: Remove unwanted files from default create-react-app
  
 ## Install
-- npm install cleanup-create-react-app
+- npx install cleanup-create-react-app
+
