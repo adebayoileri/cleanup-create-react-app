@@ -1,5 +1,5 @@
 {
-  "name": "cleanup-create-react-app",
+  "name": "cleanup-create-reactapp",
   "version": "1.0.0",
   "description": "Remove unwanted files from the default create-react-app",
   "main": "index.js",
@@ -20,6 +20,7 @@
     "clean-code"
   ],
   "author": "Adebayo Ilerioluwa",
+  "private": false,
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
