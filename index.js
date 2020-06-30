@@ -92,7 +92,7 @@ inquirer
     if (err) {
       console.error(err);
     } else {
-      console.log(chalk.green(`React app sucessfully cleaned up ⚡ `));7
+      console.log(chalk.green(`React app sucessfully cleaned up ⚡ `));
       console.log(chalk.blue('Let get into coding ⚡'))
     }
   })
