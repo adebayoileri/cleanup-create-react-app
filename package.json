@@ -1,9 +1,14 @@
 {
-  "name": "cleanup-create-reactapp",
+  "name": "cleanup-create-react-app",
   "version": "1.0.0",
   "description": "Remove unwanted files from the default create-react-app",
   "main": "index.js",
+  "bin":"index.js",
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "repository":{
+    "type": "git",
+    "url":"git+https://github.com/adebayoileri/cleanup-create-react-app.git"
+  },
   "bugs": {
     "url": "https://github.com/adebayoileri/cleanup-create-react-app/issues",
     "email": "adebayorilerioluwa@gmail.com"
@@ -25,5 +30,6 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "inquirer": "^7.2.0"
-  }
+  },
+  "homepage": "https://github.com/adebayoileri/cleanup-create-react-app/#readme"
 }
