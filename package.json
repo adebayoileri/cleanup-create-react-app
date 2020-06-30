@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "Remove unwanted files from the default create-react-app",
   "main": "index.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "bin": "node ./index",
     "clear": "bash index.sh"
   },
   "keywords": [
-    "react"
+    "reactjs",
+    "create-react-app",
+    "package"
   ],
   "author": "Adebayo Ilerioluwa",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
     "inquirer": "^7.2.0"
   }
 }

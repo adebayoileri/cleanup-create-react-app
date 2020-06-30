@@ -2,14 +2,16 @@
 
 const {exec} = require('child_process');
 const inquirer = require("inquirer");
+const chalk = require('chalk');
 
 exec('npm bin', {cwd: __dirname}, (err, stdout, stderr) => {
+  chalk.blue(console.log('cleanup create-react-app'))
 inquirer
 .prompt([
   {
     name: "delete",
     type: "checkbox",
-    message: "cleanup create-react-app",
+    message: "Select files you wish to delete",
     choices: ["App.js", "logo.svg", "index.css", "App.css", "App.test.js", "serviceWorker.js", "index.js"],
   },
 ])
@@ -25,7 +27,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted app.js");
+              chalk.red(console.log("deleted app.js"));
             }
           });
         break;
@@ -34,7 +36,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted logo.svg");
+              chalk.red(console.log("deleted logo.svg"));
             }
           });
         break;
@@ -43,7 +45,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted app.css");
+              chalk.red(console.log("deleted app.css"));
             }
           });
         break;
@@ -52,7 +54,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted index.js");
+             chalk.red(console.log("deleted index.js"));
             }
           });
         break;
@@ -61,7 +63,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted index.css");
+              chalk.red(console.log("deleted index.css"));
             }
           });
         break;
@@ -70,7 +72,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted app.test.js");
+              chalk.red(console.log("deleted app.test.js"));
             }
           });
         break;
@@ -79,7 +81,7 @@ inquirer
             if (err) {
               console.log(err);
             } else {
-              console.log("deleted serviceWorker.js");
+              chalk.red(console.log("deleted serviceWorker.js"));
             }
           });
         break;
@@ -90,7 +92,7 @@ inquirer
     if (err) {
       console.error(err);
     } else {
-        console.log('React app sucessfully cleaned up');
+        chalk.green(console.log('React app sucessfully cleaned up'));
     }
   })
 })
